@@ -36,14 +36,22 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="owU-ar-plf"/>
+                    <navigationItem key="navigationItem" id="owU-ar-plf">
+                        <barButtonItem key="rightBarButtonItem" title="Столица" id="bok-nf-dU4">
+                            <connections>
+                                <segue destination="z8E-Sr-UYm" kind="popoverPresentation" identifier="Show Capital" popoverAnchorBarButtonItem="bok-nf-dU4" id="bHL-qu-lUT">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="flagLabel" destination="vlW-SA-3pC" id="Gi7-If-PiG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0j4-2x-yrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="915"/>
+            <point key="canvasLocation" x="1169" y="915"/>
         </scene>
         <!--CoutryList View Controller-->
         <scene sceneID="eaX-Fh-sOC">
@@ -155,6 +163,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gU2-qO-84t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="487" y="915"/>
+        </scene>
+        <!--Capital View Controller-->
+        <scene sceneID="LD3-8L-g15">
+            <objects>
+                <viewController id="z8E-Sr-UYm" customClass="CapitalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RwI-Nh-Ho6"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Po-dW-vx7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MQJ-8J-8W2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="столица" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bnR-ys-HsT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bnR-ys-HsT" secondAttribute="trailing" id="EgE-Dv-vCl"/>
+                            <constraint firstAttribute="bottom" secondItem="bnR-ys-HsT" secondAttribute="bottom" id="JXJ-jp-WoS"/>
+                            <constraint firstItem="bnR-ys-HsT" firstAttribute="top" secondItem="MQJ-8J-8W2" secondAttribute="top" id="OrN-y4-dTv"/>
+                            <constraint firstItem="bnR-ys-HsT" firstAttribute="leading" secondItem="MQJ-8J-8W2" secondAttribute="leading" id="UFK-NC-1Bx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="capitalTextView" destination="bnR-ys-HsT" id="ucp-AR-Mqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydg-to-RD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853" y="909"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

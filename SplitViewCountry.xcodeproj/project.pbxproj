@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E4AB4E461C0629A7005D3D33 /* SelectContinentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AB4E451C0629A7005D3D33 /* SelectContinentTableViewController.m */; };
+		E4AB4E491C078AF2005D3D33 /* CapitalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AB4E481C078AF2005D3D33 /* CapitalViewController.m */; };
 		E4EE58F21C0455D700826A66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EE58F11C0455D700826A66 /* main.m */; };
 		E4EE58F51C0455D700826A66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EE58F41C0455D700826A66 /* AppDelegate.m */; };
 		E4EE58FB1C0455D700826A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4EE58F91C0455D700826A66 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		E4AB4E441C0629A7005D3D33 /* SelectContinentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectContinentTableViewController.h; sourceTree = "<group>"; };
 		E4AB4E451C0629A7005D3D33 /* SelectContinentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectContinentTableViewController.m; sourceTree = "<group>"; };
+		E4AB4E471C078AF2005D3D33 /* CapitalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalViewController.h; sourceTree = "<group>"; };
+		E4AB4E481C078AF2005D3D33 /* CapitalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalViewController.m; sourceTree = "<group>"; };
 		E4EE58ED1C0455D700826A66 /* SplitViewCountry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewCountry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EE58F11C0455D700826A66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4EE58F31C0455D700826A66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				E4AB4E451C0629A7005D3D33 /* SelectContinentTableViewController.m */,
 				E4EE590D1C047E6900826A66 /* CountryViewController.h */,
 				E4EE590E1C047E6900826A66 /* CountryViewController.m */,
+				E4AB4E471C078AF2005D3D33 /* CapitalViewController.h */,
+				E4AB4E481C078AF2005D3D33 /* CapitalViewController.m */,
 				E4EE58F91C0455D700826A66 /* Main.storyboard */,
 				E4EE58FC1C0455D700826A66 /* Assets.xcassets */,
 				E4EE58FE1C0455D700826A66 /* LaunchScreen.storyboard */,
@@ -161,6 +166,7 @@
 			files = (
 				E4EE590C1C04734400826A66 /* SelectCountryTableViewController.m in Sources */,
 				E4EE590F1C047E6900826A66 /* CountryViewController.m in Sources */,
+				E4AB4E491C078AF2005D3D33 /* CapitalViewController.m in Sources */,
 				E4EE58F51C0455D700826A66 /* AppDelegate.m in Sources */,
 				E4AB4E461C0629A7005D3D33 /* SelectContinentTableViewController.m in Sources */,
 				E4EE58F21C0455D700826A66 /* main.m in Sources */,

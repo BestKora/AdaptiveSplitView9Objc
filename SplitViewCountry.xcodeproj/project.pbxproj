@@ -48,6 +48,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4EE521B1C0887F8001BFC70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4EE590A1C04734400826A66 /* SelectCountryTableViewController.h */,
+				E4EE590B1C04734400826A66 /* SelectCountryTableViewController.m */,
+				E4AB4E441C0629A7005D3D33 /* SelectContinentTableViewController.h */,
+				E4AB4E451C0629A7005D3D33 /* SelectContinentTableViewController.m */,
+				E4EE590D1C047E6900826A66 /* CountryViewController.h */,
+				E4EE590E1C047E6900826A66 /* CountryViewController.m */,
+				E4AB4E471C078AF2005D3D33 /* CapitalViewController.h */,
+				E4AB4E481C078AF2005D3D33 /* CapitalViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		E4EE58E41C0455D700826A66 = {
 			isa = PBXGroup;
 			children = (
@@ -69,18 +84,8 @@
 			children = (
 				E4EE58F31C0455D700826A66 /* AppDelegate.h */,
 				E4EE58F41C0455D700826A66 /* AppDelegate.m */,
-				E4EE590A1C04734400826A66 /* SelectCountryTableViewController.h */,
-				E4EE590B1C04734400826A66 /* SelectCountryTableViewController.m */,
-				E4AB4E441C0629A7005D3D33 /* SelectContinentTableViewController.h */,
-				E4AB4E451C0629A7005D3D33 /* SelectContinentTableViewController.m */,
-				E4EE590D1C047E6900826A66 /* CountryViewController.h */,
-				E4EE590E1C047E6900826A66 /* CountryViewController.m */,
-				E4AB4E471C078AF2005D3D33 /* CapitalViewController.h */,
-				E4AB4E481C078AF2005D3D33 /* CapitalViewController.m */,
 				E4EE58F91C0455D700826A66 /* Main.storyboard */,
-				E4EE58FC1C0455D700826A66 /* Assets.xcassets */,
-				E4EE58FE1C0455D700826A66 /* LaunchScreen.storyboard */,
-				E4EE59011C0455D700826A66 /* Info.plist */,
+				E4EE521B1C0887F8001BFC70 /* Controllers */,
 				E4EE58F01C0455D700826A66 /* Supporting Files */,
 			);
 			path = SplitViewCountry;
@@ -89,6 +94,9 @@
 		E4EE58F01C0455D700826A66 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4EE58FC1C0455D700826A66 /* Assets.xcassets */,
+				E4EE59011C0455D700826A66 /* Info.plist */,
+				E4EE58FE1C0455D700826A66 /* LaunchScreen.storyboard */,
 				E4EE58F11C0455D700826A66 /* main.m */,
 			);
 			name = "Supporting Files";

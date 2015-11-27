@@ -37,11 +37,13 @@
         
         // в портретной ориентации на iPad в split view,
         //   к сожалению, master может быть доступен при открытом Popover
-        //   (поэтому удаляем Capital, если кто-то изменил country и мы попадаем в этот setter)
+        //   (поэтому удаляем Capital, если кто-то изменил country)
         
         //---iOS 8 и iOS 9----
+        
         if (self.presentedViewController) {
-            [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+            [self.presentedViewController
+                        dismissViewControllerAnimated:YES completion:nil];
         }
     }
 }
@@ -70,7 +72,7 @@
                     @"Чили": @"Сантьяго",
                     @"Япония": @"Токио",
                     @"Китай": @"Пекин",
-                    @"Колумбия": @"Санта-Фе-де-Богота",
+                    @"Колумбия": @"Санта-Фа-Де-Богота",
                     @"Дания" : @"Копенгаген"  ,
                     @"Россия" : @"Москва"
                     };

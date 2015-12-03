@@ -78,10 +78,9 @@
                     };
 
      [self updateUI];
-
-// показываем наш capital в popover
 }
 
+// показываем наш capital в popover
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.destinationViewController isKindOfClass:[CapitalViewController class]]) {

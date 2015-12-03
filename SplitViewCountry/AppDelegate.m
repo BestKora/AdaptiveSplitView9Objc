@@ -28,6 +28,13 @@
                                           splitViewController.displayModeButtonItem;
     navigationController.topViewController.navigationItem.leftItemsSupplementBackButton = YES;
     
+    splitViewController.preferredDisplayMode =  UISplitViewControllerDisplayModeAllVisible;
+    
+    // splitViewController.preferredPrimaryColumnWidthFraction = 0.5;
+    // splitViewController.maximumPrimaryColumnWidth = 512;
+    
+
+    
     splitViewController.delegate = self;
 
     return YES;

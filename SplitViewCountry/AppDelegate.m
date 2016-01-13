@@ -51,6 +51,7 @@
         if ([[(UINavigationController *)secondaryViewController topViewController]
              isKindOfClass:[CountryViewController class]]) {
             
+            
             if ([(CountryViewController *)[(UINavigationController *)secondaryViewController
                                            topViewController] country] == nil) {
                 
@@ -73,9 +74,13 @@
             
             SelectCountryTableViewController *countriesView = (SelectCountryTableViewController *)
                                      [(UINavigationController *)primaryViewController topViewController];
+            //-------- autoselectedCountry----
             NSArray * countries = countriesView.countries;
             NSString *country = countries.firstObject;
-            
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+           [countriesView.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:0];
+            //-------- autoselectedCountry----
+
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             UINavigationController *detailView =
                                 [storyboard instantiateViewControllerWithIdentifier:@"detailNavigation"];

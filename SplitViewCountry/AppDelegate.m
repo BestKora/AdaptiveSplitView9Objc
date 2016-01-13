@@ -74,6 +74,7 @@
             
             SelectCountryTableViewController *countriesView = (SelectCountryTableViewController *)
                                      [(UINavigationController *)primaryViewController topViewController];
+            
             //-------- autoselectedCountry----
             NSArray * countries = countriesView.countries;
             NSString *country = countries.firstObject;

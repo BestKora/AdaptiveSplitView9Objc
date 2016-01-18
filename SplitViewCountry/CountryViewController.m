@@ -96,6 +96,49 @@
         
     }
 }
+- (IBAction)filterImage:(UIButton *)sender {
+    UIAlertController *alert = [UIAlertController
+                                alertControllerWithTitle:@"Filter Image"
+                                message:@"Choose filter."
+                                preferredStyle:UIAlertControllerStyleActionSheet];
+    for (NSString *filter in [self filters]) {
+        UIAlertAction *filterAction = [UIAlertAction
+                                       actionWithTitle:filter
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           //                       self.image = [self.image imageByApplyingFilterNamed:self.filters[action.title]];
+                                           NSLog(@"You pressed button %@", self.filters[action.title]);
+                                       }];
+        [alert addAction:filterAction];
+    }
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction * action) {
+                                       NSLog(@"You pressed button Cancel");
+                                   }];
+    [alert addAction:cancelAction];
+    
+    alert.modalPresentationStyle = UIModalPresentationPopover; //  for iPad
+    UIPopoverPresentationController *ppc = alert.popoverPresentationController; //  for iPad
+    if (ppc)
+    {
+        ppc.sourceView = sender;
+        ppc.sourceRect = sender.bounds;
+        ppc.permittedArrowDirections = UIPopoverArrowDirectionAny;
+        
+    }
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (NSDictionary *)filters
+{
+    return @{ @"Chrome" : @"CIPhotoEffectChrome",
+              @"Blur"   : @"CIGaussianBlur",
+              @"Noir"   : @"CIPhotoEffectNoir",
+              @"Fade"   : @"CIPhotoEffectFade" };
+}
+
 
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:
                                               (UIPresentationController *)controller
